@@ -10,18 +10,13 @@
     }
 
     ul {
-      display: grid;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
       margin: 0;
       width: 100%;
       min-height: 2.8em;
-
-      @media screen and (width >= calc($min-column-width + 10em)) {
-        grid-template-columns: repeat(auto-fit, minmax($min-column-width, 1fr));
-      }
-
-      .mobile-view & {
-        grid-template-columns: 1fr;
-      }
     }
 
     li {
