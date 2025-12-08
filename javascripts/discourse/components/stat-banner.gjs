@@ -30,7 +30,7 @@ export default class StatBanner extends Component {
                 <a href={{s.link}}><span>{{s.value}}</span>
                   <span>{{s.title}}</span></a>
               {{else}}
-                <div>
+                <div class="stat-banner__item-wrapper">
                   <span>{{s.value}}</span>
                   <span>{{s.title}}</span>
                 </div>
